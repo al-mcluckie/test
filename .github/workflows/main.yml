@@ -25,7 +25,8 @@ jobs:
 
     steps:
     # Notification success
-    - uses: luisghz/simple-ms-teams-webhook-notifier@v1-latest
+    #- uses: luisghz/simple-ms-teams-webhook-notifier@v1-latest
+    - uses: al-mcluckie/simple-ms-teams-webhook-notifier@v1-latest
       with: 
         webhook_url: ${{ secrets.MS_TEAMS_DEV_WEBHOOK_URI }}
         summary: "Test"
